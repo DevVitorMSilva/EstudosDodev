@@ -1,3 +1,15 @@
+class Carro{
+
+    constructor(marca, modelo, categoria, ano, quilometragem, valor){
+        this.marca = marca
+        this.modelo = modelo
+        this.categoria = categoria
+        this.ano = ano
+        this.quilometragem = quilometragem
+        this.valor = valor
+    }
+}
+
 function Get() {
 
     return fetch('https://apigenerator.dronahq.com/api/Fzj32k-m/Carros')
@@ -12,7 +24,7 @@ function Get() {
 
     const response = await fetch(url, {
   
-      method: 'POST', // *GET, POST, PUT, DELETE, etc.
+      method: 'POST',
   
       mode: 'cors',
   
@@ -39,9 +51,7 @@ function Get() {
   }
   
   
-  postData('https://apigenerator.dronahq.com/api/Fzj32k-m/Carros', cep /* OBJETO A SER USADO */)
-  
-    .then((data) => {
+  postData('https://apigenerator.dronahq.com/api/Fzj32k-m/Carros', cep).then((data) => {
   
       console.log(data);  
   
