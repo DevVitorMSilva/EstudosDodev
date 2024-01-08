@@ -39,4 +39,12 @@ async function AddUser(data = {}) {
     return response.json()
 }
 
+async function TrackData() {
+    let data = await ReadWorkSheet()
+    data.map(async (user) => {
+        let response = await AddUser(user)
+        console.log(response)
+    })
+    return console.log("Dados copiados com sucesso")
+}
     
