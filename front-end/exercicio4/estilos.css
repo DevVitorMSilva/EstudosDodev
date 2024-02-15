@@ -1,0 +1,21 @@
+.abertura {
+    background-color: red;
+    max-width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container {
+    max-width: 90vw;
+    height: 100vh;
+    margin: 30px auto;
+    background-color: blueviolet;
+}
+
+.card {
+    width: 20vw;
+    height: 100px;
+    margin: 1vw 1.25vw;
+    background-color: red;
+    float: left;
+}
