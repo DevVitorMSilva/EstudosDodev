@@ -1,0 +1,71 @@
+.headerSection {
+    height: 14vh;
+    background-color: #ffdb15;   
+}
+
+.headerPart {
+    text-align: center;
+}
+
+.searchSection {
+    height: 7vh;
+    text-align: center;
+}
+
+#searchBar {
+    margin-top: 2vh;
+    height: 2.5vh;
+}
+
+.navBar {
+    height: 7vh;
+    border-style: solid;
+    line-height: 6vh;
+}
+
+.navOptions {
+    margin-left: 2vw;
+    vertical-align: middle;
+}
+
+.content {
+    background-color: #ebebeb;
+    height: 86vh;
+    text-align: center;
+}
+
+.benefits {
+    height: 15vh;
+    background-color: white;
+    width: 80vw;
+    margin-top: 5vh;
+    display: inline-block;
+    border-radius: 1vw;
+    
+}
+
+.offer, .firstOffer{
+    height: 15vh;
+    width: 20vw;
+    float: left;
+    text-align: left;
+}
+
+.firstOffer {
+    border-right: solid rgb(146, 144, 144) 0.3vh;
+}
+
+.title {
+    margin-top: 3.5vh;
+}
+
+.title, .subTitle {
+    margin-left: 1vw;
+}
+
+
+
+
+
+
+
