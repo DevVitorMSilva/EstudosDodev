@@ -1,0 +1,103 @@
+.headerSection {
+    height: 14vh;
+    background-color: #ffdb15;   
+}
+
+.headerPart {
+    text-align: center;
+}
+
+.searchSection {
+    height: 7vh;
+    text-align: center;
+}
+
+#searchBar {
+    margin-top: 2vh;
+    height: 2.5vh;
+}
+
+.navBar {
+    height: 7vh;
+    border-style: solid;
+    line-height: 6vh;
+}
+
+.navOptions {
+    margin-left: 2vw;
+    vertical-align: middle;
+}
+
+.navOptions:hover{
+    transition-duration: 0.5s;
+    padding: 0.5%;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.content {
+    background-color: #ebebeb;
+    height: 86vh;
+    text-align: center;
+}
+
+.benefits {
+    height: 15vh;
+    background-color: white;    
+    border-radius: 1vw;
+    
+}
+
+.offer, .firstOffer{
+    height: 15vh;
+    width: 20vw;
+    float: left;
+    text-align: left;
+}
+
+.firstOffer {
+    border-right: solid rgb(146, 144, 144) 0.3vh;
+}
+
+.title {
+    margin-top: 3.5vh;
+}
+
+.title, .subTitle {
+    margin-left: 1vw;
+}
+
+.marketItens {
+    display: inline-block;
+    
+}
+
+.marketIten{
+    overflow: hidden;
+    height: 224px;
+    width: 15vw;
+    float: left;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.contents {
+    width: 80vw;
+    margin-top: 5vh;
+    display: inline-block;
+}
+
+.marketIten:hover {
+    height: 330px;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+.price {
+    font-size: x-large;
+    color: rgb(28, 190, 28);
+    margin-top: 4vh;
+    text-align: left;
+    margin-left: 1vw;
+}
