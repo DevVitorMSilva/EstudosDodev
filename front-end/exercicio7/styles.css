@@ -1,3 +1,27 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .headerSection {
     height: 14vh;
     background-color: #ffdb15;   
@@ -15,6 +39,7 @@
 #searchBar {
     margin-top: 2vh;
     height: 2.5vh;
+    
 }
 
 .navBar {
@@ -26,6 +51,8 @@
 .navOptions {
     margin-left: 2vw;
     vertical-align: middle;
+    text-decoration: none;
+   
 }
 
 .navOptions:hover{
@@ -101,3 +128,17 @@
     text-align: left;
     margin-left: 1vw;
 }
+
+a:link {
+    color: #000000;
+}
+
+a:visited {
+    color: black;
+}
+
+a:active {
+    color: black;
+}
+
+
