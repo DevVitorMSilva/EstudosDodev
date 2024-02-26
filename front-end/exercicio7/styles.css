@@ -34,12 +34,14 @@ img {
 .searchSection {
     height: 7vh;
     text-align: center;
+ 
 }
 
 #searchBar {
     margin-top: 2vh;
     height: 2.5vh;
-    
+    width: 40vh;
+    padding: 1.5vh;
 }
 
 .navBar {
@@ -65,10 +67,16 @@ img {
     background-color: #ebebeb;
     height: 86vh;
     text-align: center;
+    
+}
+
+.contentRegister {
+    background-color: #ebebeb;
+    height: 86vh;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .benefits {
@@ -99,12 +107,12 @@ img {
 
 .marketItens {
     display: inline-block;
-    
+
 }
 
 .marketIten{
     overflow: hidden;
-    height: 224px;
+    height: 260px;
     width: 15vw;
     float: left;
     margin-left: 2.5vw;
@@ -124,14 +132,23 @@ img {
     height: 330px;
     transition-duration: 0.5s;
     transition-timing-function: linear;
+
 }
 
 .price {
     font-size: x-large;
     color: rgb(28, 190, 28);
-    margin-top: 4vh;
+    margin-top: 0.3vh;
     text-align: left;
     margin-left: 1vw;
+}
+
+.oldPrice {
+    text-align: left;
+    margin-left: 1vw;
+    margin-top: 3vh;
+    color: #ccc;
+    text-decoration: line-through;
 }
 
 a:link {
@@ -177,6 +194,7 @@ a:active {
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    margin-top: 1.2vh;
 }
 .button:hover {
     background-color: #0056b3;
