@@ -28,27 +28,29 @@
             </div>
             <div class="inputBox">
                 <label for="name">Digite seu nome</label>
-                <input type="text" name="name" id="name" placeholder="Nome">                
+                <input type="text" name="name" id="name" placeholder="Nome" required>                
             </div>
             <div class="inputBox">
                 <label for="email">Digite seu email</label>
-                <input type="email" name="email" id="email" placeholder="Email">                
+                <input type="email" name="email" id="email" placeholder="Email" required>                
             </div>
             <div class="inputBox">
                 <label for="password">Digite sua senha</label>
-                <input type="password" name="password" id="password" placeholder="Senha">                
+                <input type="password" name="password" id="password" placeholder="Senha" required>                
             </div>
             <div class="inputBox">
                 <label for="confirmPassword">Confirme sua senha</label>
-                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirmar senha">                
+                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirmar senha" required>                
             </div>
             <div class="inputBox">
-                <h4>Sexo:</h4   >
-                <select name="gender" id="">
+                <label for="gender">Sexo:</label>
+                <select name="gender" id="gender" required>
+                    <option selected disabled value="">Selecione</option>
                     <option value="male">Masculino</option>
                     <option value="female">Feminino</option>
                 </select>
             </div>
+            <button class="button" type="submit">Criar conta</button>
         </div>
         
     </section>
