@@ -20,6 +20,7 @@ ol, ul {
 img {
   max-width: 100%;
   height: auto;
+
 }
 
 .headerSection {
@@ -198,4 +199,8 @@ a:active {
 }
 .button:hover {
     background-color: #0056b3;
+}
+
+.imgContainer {
+    border-bottom: solid rgb(146, 144, 144) 0.3vh;
 }
