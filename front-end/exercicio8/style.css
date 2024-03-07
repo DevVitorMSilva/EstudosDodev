@@ -1,0 +1,9 @@
+select:focus {
+    outline: none !important;
+    border-color: purple;
+}
+
+input:focus {
+    outline: none !important;
+    border-color: purple;
+}
