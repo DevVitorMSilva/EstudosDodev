@@ -1,35 +1,26 @@
-form.addEventListener('submit', function (event){
-    event.preventDefault()
-    const inputNome = nome.value
-
-    console.log(inputNome)
-})
-
-form.addEventListener('submit', function (event){
-    event.preventDefault()
-    const inputEndereco = endereco.value
-
-    console.log(inputEndereco)
-})
+const inputNome = document.getElementById('nome')
+const inputEndereco = document.getElementById('endereco')
+const inputDias = document.getElementById('dias')
+const inputAbertura = document.getElementById('abertura')
+const inputFechamento = document.getElementById('fechamento')
 
 form.addEventListener('submit', function (event){
     event.preventDefault()
-    const inputFuncionamento = dias.value
+    
+    const valorNome = inputNome.value
+    const valorEndereco = inputEndereco.value
+    const valorDias = inputDias.value
+    const valorAbertura = inputAbertura.value
+    const valorFechamento = inputFechamento.value
+    
+    console.log("Nome da loja: " + valorNome)
+    console.log("Endereço: " + valorEndereco)       
+    console.log("Dias de funcionamento: " + valorDias) 
+    console.log("Horário de abertura: " + valorAbertura) 
+    console.log("Horário de fechamento: " + valorFechamento)
 
-    console.log(inputFuncionamento)
 })
 
-form.addEventListener('submit', function (event){
-    event.preventDefault()
-    const inputAbertura = abertura.value
 
-    console.log(inputAbertura)
-})
 
-form.addEventListener('submit', function (event){
-    event.preventDefault()
-    const inputFechamento = fechamento.value
-
-    console.log(inputFechamento)
-})
 
