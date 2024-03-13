@@ -31,3 +31,7 @@ select {
 button {
     margin-top: 2vh;
 }
+
+.btn {
+    text-align: center;
+}

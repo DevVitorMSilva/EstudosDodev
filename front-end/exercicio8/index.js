@@ -7,7 +7,7 @@ const fomr = document.getElementById("form")
 
 let valorNome, valorEndereco, valorDias, valorAbertura, valorFechamento
 form.addEventListener('submit', function (event){
-    event.preventDefault()
+    
     
     valorNome = inputNome.value
     valorEndereco = inputEndereco.value
@@ -54,6 +54,18 @@ fetch('https://api.flit.com.br/submeterDados', {
         console.error('Erro ao enviar dados:', error);
     });
 
+function recuperarDados() {
+    let nomeRecuperado = localStorage.getItem('Nome da loja')
+    let enderecoRecuperado = localStorage.getItem('Endereço')
+    let diasRecuperado = localStorage.getItem('Dias de funcionamento')
+    let aberturaRecuperado = localStorage.getItem('Horário de abertura')
+    let fechamentoRecuperado = localStorage.getItem('Horário de fechamento')
+    inputNome.value = nomeRecuperado
+    inputEndereco.value = enderecoRecuperado
+    inputDias.value = diasRecuperado
+    inputAbertura.value = aberturaRecuperado
+    inputFechamento.value = fechamentoRecuperado
+}
 
 
 
