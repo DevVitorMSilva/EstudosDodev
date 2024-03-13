@@ -21,6 +21,12 @@ form.addEventListener('submit', function (event){
     console.log("Horário de abertura: " + valorAbertura) 
     console.log("Horário de fechamento: " + valorFechamento)
 
+    window.localStorage.setItem('Nome da loja', valorNome)
+    window.localStorage.setItem('Endereço', valorEndereco)
+    window.localStorage.setItem('Dias de funcionamento', valorDias)
+    window.localStorage.setItem('Horário de abertura', valorAbertura)
+    window.localStorage.setItem('Horário de fechamento', valorFechamento)
+
 })
 
 console.log("Preparando envio...")
