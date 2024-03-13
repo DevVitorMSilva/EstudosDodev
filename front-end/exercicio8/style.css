@@ -7,3 +7,27 @@ input:focus {
     outline: none !important;
     border-color: purple;
 }
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.forms {
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+}
+
+input {
+    margin-top: 2vh;
+    padding-right: 15vh;
+}
+
+select {
+    margin-top: 2vh;
+}
+
+button {
+    margin-top: 2vh;
+}

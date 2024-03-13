@@ -3,15 +3,17 @@ const inputEndereco = document.getElementById('endereco')
 const inputDias = document.getElementById('dias')
 const inputAbertura = document.getElementById('abertura')
 const inputFechamento = document.getElementById('fechamento')
+const fomr = document.getElementById("form")
 
+let valorNome, valorEndereco, valorDias, valorAbertura, valorFechamento
 form.addEventListener('submit', function (event){
     event.preventDefault()
     
-    const valorNome = inputNome.value
-    const valorEndereco = inputEndereco.value
-    const valorDias = inputDias.value
-    const valorAbertura = inputAbertura.value
-    const valorFechamento = inputFechamento.value
+    valorNome = inputNome.value
+    valorEndereco = inputEndereco.value
+    valorDias = inputDias.value
+    valorAbertura = inputAbertura.value
+    valorFechamento = inputFechamento.value
     
     console.log("Nome da loja: " + valorNome)
     console.log("Endereço: " + valorEndereco)       
@@ -20,6 +22,35 @@ form.addEventListener('submit', function (event){
     console.log("Horário de fechamento: " + valorFechamento)
 
 })
+
+console.log("Preparando envio...")
+
+const dadosFormulario = {
+    nome: valorNome,
+    endereco: valorEndereco,
+    dias: valorDias,
+    abertura: valorAbertura,
+    fechamento: valorFechamento
+}
+
+fetch('https://api.flit.com.br/submeterDados', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(dadosFormulario),
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Resposta do servidor:', data);
+    })
+    .catch((error) => {
+        console.error('Erro ao enviar dados:', error);
+    });
+
+
+
+
 
 
 
