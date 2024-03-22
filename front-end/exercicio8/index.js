@@ -3,11 +3,11 @@ const inputEndereco = document.getElementById('endereco')
 const inputDias = document.getElementById('dias')
 const inputAbertura = document.getElementById('abertura')
 const inputFechamento = document.getElementById('fechamento')
-const fomr = document.getElementById("form")
+const form = document.getElementById("form")
 
 let valorNome, valorEndereco, valorDias, valorAbertura, valorFechamento
 form.addEventListener('submit', function (event){
-    
+    event.preventDefault();
     
     valorNome = inputNome.value
     valorEndereco = inputEndereco.value

@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <section class="forms">
+    <div class="container">
         <form id="form">
-            <div>
+            <div class="input-box">
                 <label for="nome">Insira o nome da loja:</label>
                 <input type="text" id="nome" class="formulario" placeholder="Nome">
             </div>
-            <div>
+            <div class="input-box">
                 <label for="endereco">Insira seu endereço:</label>
                 <input type="text" id="endereco" class="formulario" placeholder="Endereço">
             </div>
-            <div>
+            <div class="input-box">
                 <label for="diasFuncionamento">Selecione os dias de funcionamento da loja</label>
                 <select name="diasFuncionamento" id="dias">
                     <option value="1">1</option>
@@ -29,25 +31,24 @@
                     <option value="7">7</option>
                 </select>
             </div>
-            <div>
+            <div class="input-box">
                 <label for="horarioAbertura">Insira o horário de abertura da loja:</label>
                 <input type="time" id="abertura" name="horarioAbertura">
             </div>
-            <div>
+            <div class="input-box">
                 <label for="horarioFechamento">Insira o horário de fechamento da loja:</label>
                 <input type="time" id="fechamento" name="horarioFechamento">
             </div>
-            <div>
+            <div class="btn-group">
                 <button type="submit">Enviar</button>
+                <button onclick=recuperarDados()>Recuperar Dados</button>
             </div>
-            
-        </form>        
-    </section>
-    <div class="btn">
-        <button onclick=recuperarDados()>Recuperar Dados</button>
+
+        </form>
     </div>
-    
+
 
     <script src="index.js"></script>
 </body>
+
 </html>

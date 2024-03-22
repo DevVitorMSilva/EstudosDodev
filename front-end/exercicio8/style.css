@@ -1,37 +1,36 @@
-select:focus {
-    outline: none !important;
-    border-color: purple;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-input:focus {
-    outline: none !important;
-    border-color: purple;
-}
-
-body {
+body{
     width: 100vw;
     height: 100vh;
-}
-
-.forms {
     display: flex;
     justify-content: center;
-    vertical-align: center;
+    align-items: center;
+    background-color: #3f3f46;
 }
 
-input {
-    margin-top: 2vh;
-    padding-right: 15vh;
+.container {
+    display: flex;
+    width: 60vw;
+    height: 50vh;
+    background-color: #27272a;
 }
 
-select {
-    margin-top: 2vh;
+form{
+    margin-top: 20vh;
 }
 
-button {
-    margin-top: 2vh;
-}
+.input-box {
+    display: flex;
+    flex-direction: row;
+    float: left;
+    width: 15vw;
+    margin: 1vh 2.5vh;
+}   
 
-.btn {
-    text-align: center;
+.btn-group {
+
 }
